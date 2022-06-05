@@ -1,0 +1,50 @@
+h1, p {
+    color: white;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+.jumbotron {
+    height: 50vh;
+    background-color: black;
+}
+
+.divDescription {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 17vh;
+    background-color: #FCE181;
+}
+
+.input-group {
+    width: 70vh;
+}
+
+footer {
+    padding: 10px;
+}
+
+#divAboutUs {
+    background-color: #EEEEEE;
+}
+
+#divTitleContent {
+    position: absolute;
+    left: 50%;
+    top: 22.5%;
+    -webkit-transform: translate(-50%, -22.5%);
+    transform: translate(-50%, -22.5%);  
+}
+
+#inputSearch {
+    background-color: black;
+    display: inline;
+    color: white;
+}
