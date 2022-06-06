@@ -1,0 +1,13 @@
+footer {
+    padding: 10px;
+}
+
+.input-group {
+    width: 70vh;
+}
+
+#inputSearch {
+    background-color: black;
+    display: inline;
+    color: white;
+}

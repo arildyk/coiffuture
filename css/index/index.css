@@ -24,7 +24,7 @@ p {
 }
 
 .input-group {
-    width: 70vh;
+    width: 40vw;
 }
 
 footer {
@@ -35,16 +35,7 @@ footer {
     background-color: #EEEEEE;
 }
 
-#divTitleContent {
-    position: absolute;
-    left: 50%;
-    top: 22.5%;
-    -webkit-transform: translate(-50%, -22.5%);
-    transform: translate(-50%, -22.5%);  
-}
-
 #inputSearch {
     background-color: black;
-    display: inline;
     color: white;
 }
