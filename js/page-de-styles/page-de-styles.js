@@ -8,7 +8,7 @@ const links = [
     "https://www.menshairstyletrends.com/wp-content/uploads/2020/05/buzz-cut-low-fade-short-beard-los_the_barber--1024x1024.jpg",
 ];
 
-const names = ["Fade", "Juice Box", "Short Mullet", "Fade Taper", "Curly Fade", "Buzz"];
+const names = ["Fade", "Juice Box", "Short Mullet", "Taper", "Curly Fade", "Buzz"];
 const descriptions = [
     "Une coiffure où les cheveux sur les côtés sont coupés et qui s'estompe sur la peau.",
     "Une coiffure qui imite la forme carrée d'une boîte à jus.",
@@ -44,20 +44,35 @@ for (var i = 1; i <= 3; i++) {
         
         divStyleItem.style.marginBottom = "40px";
         divStyleItem.className = "container";
+
         var index = k-1
-        divStyleItem.id = index.toString();
+        var id = index + 1;
+        divStyleItem.id = id.toString();
         
-        img.src = links[k-1];
+        divStyleItem.onclick = function() {
+            window.location.href = "page-du-style-choisi-" + divStyleItem.id + ".html";
+        }
+        divStyleItem.onmouseover = function() {
+            divStyleItem.style.backgroundColor = "#FCE181";
+            divStyleItem.style.cursor = "pointer";
+        }
+        divStyleItem.onmouseout = function() {
+            divStyleItem.style.backgroundColor = "white";
+        }
+        
+
+        img.src = links[index];
         img.style.borderRadius = "60px";
+        img.style.paddingTop = "10px";
         img.className = "img-fluid";
 
-        pDuree.style.color = "darkgray";
-        pDescription.style.color = "darkgray";
+        pDuree.style.color = "gray";
+        pDescription.style.color = "gray";
 
-        h5.innerHTML = names[k-1];
+        h5.innerHTML = names[index];
         pPrice.innerHTML = "35 $";
         pDuree.innerHTML = "20 mins";
-        pDescription.innerHTML = descriptions[k-1];
+        pDescription.innerHTML = descriptions[index];
 
         divInfo.appendChild(h5);
         divInfo.appendChild(pPrice);
@@ -73,44 +88,3 @@ for (var i = 1; i <= 3; i++) {
 }
 
 divStyles.appendChild(row);
-
-var searchButton = document.getElementById("searchButton");
-
-searchButton.onmouseover = function() {
-    this.style.backgroundColor = "darkgray";
-}
-
-searchButton.onmouseout = function() {
-    this.style.backgroundColor = "white";
-}
-
-searchButton.onmousedown = function() {
-    this.style.backgroundColor = "gray";
-}
-
-searchButton.onmouseup = function() {
-    this.style.backgroundColor = "darkgray";
-}
-
-searchButton.onclick = function() {
-    var inputSearch = document.getElementById("inputSearch");
-    var elements = divStyles.childNodes.elements;
-
-    for (var i = 0; i < names.length; i++) {
-       document.getElementById(i.toString()).style.display = "block";
-    }
-
-    if (inputSearch.value != "") {
-        for (var i = 0; i < names.length; i++) {
-            if (!names[i].includes(inputSearch.value)) {
-                document.getElementById(i.toString()).style.display = "none";
-            }
-
-            if (elements[i].children.length == 0) {
-                elements[i].style.display = "none";
-            }
-
-        }
-
-    }
-}

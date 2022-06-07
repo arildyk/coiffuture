@@ -23,19 +23,10 @@ p {
     background-color: #FCE181;
 }
 
-.input-group {
-    width: 40vw;
-}
-
 footer {
     padding: 10px;
 }
 
 #divAboutUs {
     background-color: #EEEEEE;
-}
-
-#inputSearch {
-    background-color: black;
-    color: white;
 }
