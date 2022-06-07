@@ -7,7 +7,6 @@
         <link rel="stylesheet" type="text/css" href="css/bootstrap-5.2.0-beta1/bootstrap.min.css"/>
         <link rel="stylesheet" type="text/css" href="css/page-du-style-choisi/page-du-style-choisi.css">
         <script type="text/javascript" src="js/bootstrap-5.2.0-beta1/bootstrap.min.js"></script>
-        
     </head>
     <body class="d-flex flex-column min-vh-100">
         <nav class="navbar navbar-default" style="background-color: black;">
@@ -15,20 +14,57 @@
                   <a class="navbar-brand" href="index.html" style="color: white;">COIFFUTURE</a>
             </div>
         </nav>
-        
         <div id="divStyle" class="container">
+            <button id="btnReturn" class="btn" style="margin-bottom: 10px; margin-top: 10px;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+                </svg>
+                Retour au page de styles
+            </button>
             <br/>
-            <br/>
-            <img src="https://manhaircuts.com/wp-content/uploads/2020/05/Classic-Juice-Box-Fade-with-Parallel-Line-1024x1024.jpg" class="img-fluid" />
-            <div>
-                <h4>Juice Box</h4>
-                <p>35 $</p>
-                <p>20 mins</p>
-                <p>Une coiffure qui imite la forme carrée d'une boîte à jus.</p>
+            <div class="row">
+                <div class="col-lg-5">
+                    <img src="https://manhaircuts.com/wp-content/uploads/2020/05/Classic-Juice-Box-Fade-with-Parallel-Line-1024x1024.jpg" 
+                    class="img-fluid"/>
+                </div>
+                <div class="col">
+                    <h4>Juice Box</h4>
+                    <p>35 $</p>
+                    <p>20 mins</p>
+                    <p>Une coiffure qui imite la forme carrée d'une boîte à jus.</p>
+                </div>
             </div>
-            <h4>Coiffeurs disponible</h4>
         </div>
         
+        <div class="container">
+            <br />
+            <h4>Coiffeurs disponible</h4>
+            <br />
+            <div class="row container">
+                <div class="col text-center border">
+                    <h5>Ali</h5>
+                    <br />
+                    <br />
+                    <br />
+                    <button class="btn btn-dark">Prendre rendez-vous</button>
+                </div>
+                <div class="col text-center border">
+                    <h5>Adam</h5>
+                    <br />
+                    <br />
+                    <br />
+                    <button class="btn btn-dark">Prendre rendez-vous</button>
+                </div>
+                <div class="col text-center border">
+                    <h5>Alex</h5>
+                    <br />
+                    <br />
+                    <br />
+                    <button class="btn btn-dark">Prendre rendez-vous</button>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="js/page-du-style-choisi/page-du-style-choisi.js"></script>
     </body>
     <footer class="mt-auto text-center lead">
         COIFFUTURE • 2929 Av. Carling, Ottawa, ON • (613)-123-4567 • Ouvert de lundi à samedi de 11h à 19h
