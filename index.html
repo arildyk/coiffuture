@@ -7,7 +7,6 @@
         <link rel="stylesheet" type="text/css" href="css/bootstrap-5.2.0-beta1/bootstrap.min.css"/>
         <link rel="stylesheet" type="text/css" href="css/index/index.css">
         <script type="text/javascript" src="js/bootstrap-5.2.0-beta1/bootstrap.min.js"></script>
-        <script type="text/javascript" src="js/index/index.js"></script>
     </head>
     <body>
         <div class="jumbotron text-center container-fluid">
@@ -23,16 +22,7 @@
                 <p class="lead">Décrouvrez nos styles attirante !</p>
                 <br/>
                 <br/>
-                <div class="input-group container-fluid d-flex justify-content-center">
-                    <input type="search" id="inputSearch" class="form-control" placeholder="Chercher une style..." />
-                    <span class="input-group-text border-0" id="searchAddon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" 
-                        viewBox="0 0 16 16">
-                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 
-                            1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                        </svg>
-                    </span>
-                </div>
+                <button id="searchButton" type="button" class="btn btn-lg btn-dark btn-outline-light">Chercher une style</button>
             </div>
         </div>
         <div class="container">
@@ -68,6 +58,7 @@
                 </div>
             </div>
         </div>
+        <script type="text/javascript" src="js/index/index.js"></script>
     </body>
     <footer class="mt-auto text-center lead">
         COIFFUTURE • 2929 Av. Carling, Ottawa, ON • (613)-123-4567 • Ouvert de lundi à samedi de 11h à 19h
