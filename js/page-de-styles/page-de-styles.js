@@ -43,7 +43,7 @@ for (var i = 1; i <= 3; i++) {
         divInfo.className = "text-left";
         
         divStyleItem.style.marginBottom = "40px";
-        divStyleItem.className = "container";
+        divStyleItem.className = "container card";
 
         var index = k-1
         var id = index + 1;
