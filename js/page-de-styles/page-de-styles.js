@@ -22,13 +22,13 @@ var divStyles = document.getElementById("divStyles");
 
 const row = document.createElement("div");
 row.className = "row justify-content-lg-around";
-row.style.paddingTop = "20px";
+// row.style.paddingTop = "20px";
 
 for (var i = 1; i <= 3; i++) {
     const col = document.createElement("div");
+    col.className = "col";
     var k = i;
     for (var j = 1; j <= (names.length / 3); j++) {
-        col.className = "col-lg";
     
         const img = document.createElement("img");
         const divInfo = document.createElement("div");
@@ -37,49 +37,43 @@ for (var i = 1; i <= 3; i++) {
         const pPrice = document.createElement("p");
         const pDuree = document.createElement("p");
         const pDescription = document.createElement("p");
+        const aStyleItemButton = document.createElement("a");
         
-        divInfo.style.paddingTop = "10px";
-        divInfo.style.height = "200px";
-        divInfo.className = "text-left";
-        
-        divStyleItem.style.marginBottom = "40px";
-        divStyleItem.className = "container card";
-
         var index = k-1
         var id = index + 1;
         divStyleItem.id = id.toString();
         
-        divStyleItem.onclick = function() {
-            window.location.href = "page-du-style-choisi-" + divStyleItem.id + ".html";
-        }
-        divStyleItem.onmouseover = function() {
-            divStyleItem.style.backgroundColor = "#FCE181";
-            divStyleItem.style.cursor = "pointer";
-        }
-        divStyleItem.onmouseout = function() {
-            divStyleItem.style.backgroundColor = "white";
-        }
-        
-
         img.src = links[index];
-        img.style.borderRadius = "60px";
-        img.style.paddingTop = "10px";
-        img.className = "img-fluid";
-
+        
         pDuree.style.color = "gray";
         pDescription.style.color = "gray";
-
+        divStyleItem.style.marginBottom = "25px";
+        
         h5.innerHTML = names[index];
-        pPrice.innerHTML = "35 $";
-        pDuree.innerHTML = "20 mins";
+        pPrice.innerHTML = "Prix: 35 $";
+        pDuree.innerHTML = "Durée: 20 mins";
         pDescription.innerHTML = descriptions[index];
+        aStyleItemButton.innerHTML = "Voir plus";
+        
+        h5.className = "card-title";
+        img.className = "card-img-top";
+        pPrice.className = "card-text";
+        pDuree.className = "card-text";
+        pDescription.className = "card-text";
+        divStyleItem.className = "card";
+        divInfo.className = "card-body";
+        aStyleItemButton.className = "btn btn-dark";
+
+        aStyleItemButton.href = "page-du-style-choisi-" + divStyleItem.id + ".html";
 
         divInfo.appendChild(h5);
         divInfo.appendChild(pPrice);
         divInfo.appendChild(pDuree);
         divInfo.appendChild(pDescription);
+        divInfo.appendChild(aStyleItemButton);
         divStyleItem.appendChild(img);
         divStyleItem.appendChild(divInfo);
+
         col.appendChild(divStyleItem);
         k += 3;
     }
