@@ -9,15 +9,28 @@
         <script type="text/javascript" src="js/bootstrap-5.2.0-beta1/bootstrap.min.js"></script>
     </head>
     <body class="d-flex flex-column min-vh-100">
-        <nav class="navbar navbar-default" style="background-color: black;">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
-                  <a class="navbar-brand" href="index.html" style="color: white;">COIFFUTURE</a>
+                <a class="navbar-brand" style="color: white;">COIFFUTURE</a>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Page d'accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="page-de-styles.html">Nos styles</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
+        <br/>
         <div id="divStyle" class="container">
             <div class="alert alert-success" role="alert">
-                Votre réservation a été bien reçu !
+                <h4 class="alert-heading">Succès !</h4>
+                <p>Votre réservation a été bien reçu !</p>
             </div>
+            <a class="btn btn-dark" href="page-de-styles.html">Voir d'autres styles</a>
             <br/>
         </div>
         <script type="text/javascript" src="js/page-choisir-date/page-choisir-date.js"></script>

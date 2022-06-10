@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>COIFFUTURE</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-5.2.0-beta1/bootstrap.min.css"/>
+        <link rel="stylesheet" type="text/css" href="css/page-du-style-choisi/page-du-style-choisi.css">
+        <script type="text/javascript" src="js/bootstrap-5.2.0-beta1/bootstrap.min.js"></script>
+    </head>
+    <body class="d-flex flex-column min-vh-100">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" style="color: white;">COIFFUTURE</a>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Page d'accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="page-de-styles.html">Nos styles</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div id="divStyle" class="container">
+            <br/>
+            <h4>Rendez-vous avec: Ali</h4>
+            <form>
+                <div class="form-group">
+                    <label for="inputDate">Choisissez une date pour votre rendez-vous</label>
+                    <input type="date" class="form-control" id="inputDate">
+                </div>
+                <br/>
+                <div class="form-group">
+                    <label for="inputTime">Choisissez l'heure pour votre rendez-vous</label>
+                    <input type="time" class="form-control" id="inputTime">
+                </div>
+                <br/>
+                <div class="form-group">
+                    <label for="inputName">Entrez votre nom</label>
+                    <input type="text" class="form-control" id="inputName">
+                </div>
+                <br/>
+                <div class="form-group">
+                    <label for="inputEmail">Entrez votre adresse de courriel</label>
+                    <input type="email" class="form-control" id="inputEmail" aria-describedby="inputEmailHelp">
+                    <small id="inputEmailHelp" class="form-text text-muted">Nous ne partagerons jamais votre e-mail avec quelqu'un d'autre.</small>
+                </div>
+                <br/>
+                <div class="d-flex justify-content-between">
+                    <a class="btn btn-outline-dark" href="page-du-style-choisi-6.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+                        </svg>
+                        Retour
+                    </a>
+                    <a class="btn btn-dark" href="page-de-confirmation.html">Réserver</a>
+                </div>
+            </form>
+            <br/>
+        </div>
+        <script type="text/javascript" src="js/page-choisir-date/page-choisir-date.js"></script>
+    </body>
+    <footer class="mt-auto text-center lead">
+        COIFFUTURE • 2929 Av. Carling, Ottawa, ON • (613)-123-4567 • Ouvert de lundi à samedi de 11h à 19h
+    </footer>
+</html>

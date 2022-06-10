@@ -44,9 +44,7 @@ for (var i = 1; i <= 3; i++) {
         divStyleItem.id = id.toString();
         
         img.src = links[index];
-        
-        pDuree.style.color = "gray";
-        pDescription.style.color = "gray";
+
         divStyleItem.style.marginBottom = "25px";
         
         h5.innerHTML = names[index];
@@ -58,8 +56,8 @@ for (var i = 1; i <= 3; i++) {
         h5.className = "card-title";
         img.className = "card-img-top";
         pPrice.className = "card-text";
-        pDuree.className = "card-text";
-        pDescription.className = "card-text";
+        pDuree.className = "card-text text-muted";
+        pDescription.className = "card-text text-muted";
         divStyleItem.className = "card";
         divInfo.className = "card-body";
         aStyleItemButton.className = "btn btn-dark";
